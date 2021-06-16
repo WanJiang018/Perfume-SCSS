@@ -1,0 +1,28 @@
+.list-vertical {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .list-vertical-item {
+    margin-right: 0;
+
+    @include lg {
+      justify-content: flex-start;
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+  }
+
+  .list-vertical-link {
+    color: #848484;
+    font-weight: $font-weight-medium;
+
+    &.active {
+      border-bottom: 2px solid $primary;
+    }
+  }
+
+  @include lg {
+    flex-direction: column;
+  }
+}

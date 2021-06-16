@@ -1,0 +1,11 @@
+.hover-zoomin-wrapper {
+  overflow: hidden;
+}
+
+.hover-zoomin-img {
+  transition: all 1s ease;
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+}

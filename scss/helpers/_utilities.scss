@@ -1,0 +1,103 @@
+.bg-lightGray {
+  background-color: #e0e0e0;
+}
+
+.text-lightBlack {
+  color: #212529;
+}
+
+.text-darkGray {
+  color: #848484;
+}
+
+.text-gray {
+  color: #818a91;
+}
+
+.text-lightGray {
+  color: #a5a5a5;
+}
+
+.text-deleted {
+  text-decoration: line-through;
+  color: $secondary;
+}
+
+.text-with-underline {
+  font-size: 16px;
+  font-weight: $font-weight-medium;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #818a91;
+}
+
+.circle-number {
+  @include circle-number(0, white, 16px, 12px);
+  position: absolute;
+  top: -7px;
+  right: -8px;
+}
+
+.mask-darken {
+  position: relative;
+  background-color: rgba(0, 0, 0, 30%);
+  img {
+    mix-blend-mode: darken;
+  }
+}
+
+.content-text {
+  max-width: 445px;
+}
+
+.content-center {
+  @include content-center;
+}
+
+.content-center-abs {
+  @include content-center-abs;
+}
+
+.content-start-center {
+  @include content-start-center;
+}
+
+.content-end-center {
+  @include content-end-center;
+}
+
+.content-sm-end-center {
+  @include sm {
+    @include content-end-center;
+  }
+}
+
+.order-top {
+  z-index: 1;
+}
+
+.mobile-hide {
+  display: none;
+
+  @include sm {
+    display: block;
+  }
+}
+
+.pad-hide {
+  display: none;
+
+  @include lg {
+    display: block;
+  }
+}
+
+.mobile-img-fluid {
+  max-width: 100%;
+  height: auto;
+
+  @include sm {
+    width: auto;
+    height: auto;
+  }
+}
+

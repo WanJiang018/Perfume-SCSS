@@ -1,0 +1,20 @@
+.list-three-cols > .list-three-cols-item:not(:last-child) {
+  margin-bottom: 32px;
+
+  @include sm {
+    margin-bottom: 0;
+  }
+}
+
+.list-three-cols-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.list-three-cols-subtitle {
+  margin-bottom: 8px;
+
+  @include sm {
+    margin-bottom: 16px;
+  }
+}

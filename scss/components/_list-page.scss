@@ -1,0 +1,19 @@
+.list-page {
+  display: flex;
+  justify-content: center;
+
+  .list-page-item {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .list-page-link {
+      color: #000000;
+      font-size: 20px;
+     
+      &.active, &:hover {
+        color: #ac8a46;
+        text-decoration: underline;
+      }
+    }
+  }
+}

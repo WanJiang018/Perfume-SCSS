@@ -1,0 +1,73 @@
+@mixin hide-text {
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin content-center-abs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin content-start-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin content-end-center {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin logo($img, $height, $width) {
+  @include hide-text;
+  display: block;
+  height: $height;
+  width: $width;
+  background: url($imgUrlPrefix + $img) no-repeat;
+}
+
+@mixin cover-img($img) {
+  background-image: url($imgUrlPrefix + $img);
+  background-size: cover;
+  background-position: center;
+  background-position-x: 0;
+}
+
+@mixin circle-number($border, $color, $scacle, $font-size) {
+  border: $border;
+  color: $color;
+  width: $scacle;
+  height: $scacle;
+  font-size: $font-size;
+  line-height: $scacle;
+  text-align: center;
+}
+
+@mixin sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
