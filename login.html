@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/all.css">
+    <title>d'Perfume</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light order-top">
+        <div class="container justify-content-end justify-content-between">
+            <h1 class="me-auto me-lg-0"><a class="logo" href="./index.html"></a></h1>
+            <div class="position-relative d-lg-none me-4">
+                <i class="fas fa-shopping-cart text-secondary fs-5"></i>
+                <div class="circle-number rounded-circle bg-primary fs-7">3</div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./product.html">
+                            <i class="fas fa-store-alt"></i>
+                            Product
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">
+                            <i class="fa fa-user"></i>
+                            log in
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-heart"></i>
+                            Wishlist
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-shopping-cart"></i>
+                            Cart(3)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse navbar-mobile" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./product.html">
+                            Product
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Wishlist
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">
+                            log in
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- menu -->
+    <nav class="bg-primary mobile-hide">
+        <ul class="container nav">
+            <li class="nav-item">
+                <a class="nav-link link-light py-3" href="#">CHANEL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-light py-3" href="#">Jo Malone</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-light py-3" href="#">Curology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-light py-3" href="#">Dior</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-light py-3" href="#">Chloe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-light py-3" href="#">ZARA</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- main -->
+    <main class="container content-main">
+        <div class="row gx-7 gy-6 content-start-center" >
+            <div class="col-sm-8">
+                <img src="./images/login1.jpg" alt="login" class="img-fluid">
+            </div>
+            <form class="col-sm-4">
+                <h2 class="mb-2 fw-bold">Log in</h2>
+                <div class="mb-4">
+                    <label class="form-label text-lightBlack">帳號</label>
+                    <input type="email" class="form-control" placeholder="email@example.com">
+                </div>
+                <div class="mb-9">
+                    <label class="form-label text-lightBlack">密碼</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="d-flex justify-content-end">
+                    <a class="me-auto link-primary fw-medium" href="#">忘記密碼</a>
+                    <a class="me-1 btn btn-outline-primary">註冊</a>
+                    <a href="./member.html" class="btn btn-primary">登入</a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="bg-primary py-4">
+        <div class="container d-flex align-items-center justify-content-between justify-content-sm-start">
+            <a href="./index.html" class="footer-logo"></a>
+            <span class="copyright ms-sm-4">© 2020. All Rights Reserved.</span>
+            <div class="ms-auto d-none d-sm-block">
+                <ul class="row gx-8 ">
+                    <li class="col"><a href="./product.html" class="link-light fw-normal">Product</a></li>
+                    <li class="col"><a href="#" class="link-light fw-normal">Blog</a></li>
+                    <li class="col"><a href="#" class="link-light fw-normal">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
